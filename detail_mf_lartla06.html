@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guerlain</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/guerlain.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside id="menuPanel">
+        <input type="button" value="close" class="closeBtn">        
+        <nav>                     
+            <div>
+                <b>GIFTS</b>
+                <ul>
+                    <!-- <li><a href="list_gifts_all.html">All</a></li> -->
+                    <li><a href="list_gifts_m.html">Men</a></li>
+                    <li><a href="list_gifts_w.html">Women</a></li>
+                    <li><a href="list_bath.html">Bath &amp; Body</a></li>
+                    <li><a href="list_candi.html">Candle &amp; Diffusers</a></li>
+                    <li><a href="list_art.html">Art &amp; Gifting</a></li>
+                </ul>
+            </div>
+            <div>
+                <b>MEN FRAGRANCE</b>
+                <ul>
+                    <li><a href="list_lhomme.html">L&#39;Homme Ideal</a></li>
+                    <li><a href="list_habit.html">Habit Rouge</a></li>
+                    <li><a href="list_iconic.html">Iconic fragrances for men</a></li>
+                    <li><a href="list_lartla.html">L&#39;Art &amp; La Matière Collection</a></li>
+                    <li><a href="list_lesab.html">Les Absolus d&#39;Orient Collection</a></li>
+                    <li><a href="list_lesco.html">Les Colognes</a></li>
+                </ul>
+            </div>
+            <div>
+                <b>WOMEN FRAGRANCE</b>               
+                <ul>
+                    <li><a href="list_lartla.html">L&#39;Art &amp; La Matière Collection</a></li>
+                    <li><a href="list_aqua.html">Aqua Allegoria Collection</a></li>
+                    <li><a href="list_leslegend.html">Les Légendaires Collection</a></li>
+                    <li><a href="list_shali.html">Shalimar</a></li>
+                    <li><a href="list_mon.html">Mon Guerlain</a></li>
+                    <li><a href="list_lapet.html">La Petite Robe Noire</a></li>
+                </ul>
+            </div>
+            <div>
+                <b>PERSONALIZATION</b>                    
+                <ul>
+                    <li><a href="list_except.html">Exceptional Creations</a></li>
+                    <li><a href="list_rendez.html">Guerlain Rendezvous</a></li>
+                    <li><a href="list_lesab.html">Les Absolus d&#39;Orient Collection</a></li>
+                    <li><a href="list_lesco.html">Les Colognes</a></li>
+                    <li><a href="detail_per_ren01.html">Muguet by Anne Lopez</a></li>
+                    <li><a href="detail_per_ren02.html">Cherry Blossom by Philippe Ferrandis</a></li>
+                </ul>                            
+            </div>
+            <div>
+                <b><a href="list_creators.html">ABOUT GUERLAIN</a></b>  
+            </div>                     
+        </nav>
+        <div class="panelfooter">
+            <ul>
+                <li>
+                    <a href="login.html">LOGIN</a>
+                    <a href="join.html">JOIN </a>
+                    <a href="shoppingbag.html">&nbsp; SHOPPING BAG</a>
+                </li>
+            </ul>
+        </div>   
+    </aside>
+    <!-- aside fin -->
+
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined" data-panel="menuPanel">
+            </div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo_black.svg" alt="GUERLAIN_CI_black">
+                </a>
+            </h1>
+            <ul>
+                <li><input type="button" value="search" data-popup="searchPopup"></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header fin -->
+
+    <div id="searchPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <form>
+                <span>
+                    <input type="search" id="searchField" placeholder="Search..." title="insert your search Keywords">
+                    <input type="submit" value="search">
+                </span>
+            </form>
+            <ul id="searchKeyword">
+                <li><a href="list_lartla.html">#FEATURED</a></li>                                
+                <li><a href="list_candi.html">#DIFFUSERS</a></li>
+                <li><a href="list_bath.html">#BATH & BODY</a></li>
+                <li><a href="list_aqua.html">#NEW</a></li>  
+                <li><a href="list_gifts_w.html">#GIFTS</a></li>           
+            </ul>
+        </div>
+    </div>
+    <!-- search fin -->
+
+    <div class="detail_con">
+        <div class="detail_wrap">
+            <img src="images/detail_lartla06_01.jpg" width="600" height="600" alt="detail_lartla06_01">
+            <div class="detailRight">
+                <dl>
+                    <dt>L'ART & LA MATIÈRE</dt>
+                    <dd>SPIRITUEUSE DOUBLE VANILLE – EAU DE PARFUM</dd>
+                    <dd>A woody-ambery fragrance amplified <br>
+                        by an excess of vanilla</dd>
+                    <dd>Intensity ●●●○</dd>
+                    <dd>100 ML / 3.38 OZ <b>$395.00</b></dd>
+                    <dd>
+                        <img src="images/icon_shipping.png" alt="delivery truck icon">
+                         Complimentary shipping on all orders</dd>
+                </dl>
+                <a href="cart.html" class="addBtn">ADD TO CART</a>
+                <a href="checkout.html" class="checkoutBtn">CHECKOUT</a>
+            </div>            
+        </div>        
+        <div class="detail_slider">
+            <img src="images/detail_lartla06_01.jpg" alt="img-1" class="image-item">
+            <img src="images/detail_lartla06_02.jpg" alt="img-2" class="image-item">
+            <img src="images/detail_lartla06_03.jpg" alt="img-3" class="image-item">
+            <img src="images/detail_lartla06_04.jpg" alt="img-4" class="image-item">
+            <img src="images/detail_lartla06_05.jpg" alt="img-5" class="image-item">
+            <img src="images/detail_lartla06_06.jpg" alt="img-6" class="image-item">
+            <img src="images/detail_lartla06_07.jpg" alt="img-7" class="image-item">
+            <img src="images/detail_lartla05_08.jpg" alt="img-8" class="image-item">             
+        </div> 
+        <div class="detail_videowrap">
+            <div class="detail_txtBox">
+                <h2>L'ART ET LA MATIÈRE COLLECTION</h2>
+                <p>L’Art & La Matière is a collection of olfactory masterpieces expertly crafted by the House of Guerlain Perfumers. Every creation in the L’Art & La Matière collection is born of an artistic emotion, an indelible mark left on each Guerlain Perfumer’s memory. ​</p>
+            </div>        
+            <div class="detail_videoBox">
+                <div class="videoslide">
+                    <div class="video_list">
+                        <div>
+                            <input type="button" value="▷" class="videoPbtn" data-get="0">
+                            <input type="button" value="||" class="videoSbtn" data-get1="0"> 
+                            <video class="video-item" src="videos/lartla06_1.mp4" poster="images/detail_lartla06_th01.jpg" controls muted></video>
+                        </div>
+                        <div>
+                            <input type="button" value="▷" class="videoPbtn" data-get="1">
+                            <input type="button" value="||" class="videoSbtn" data-get1="1">
+                            <video class="video-item" src="videos/lartla06_2.mp4" poster="images/detail_lartla06_th02.jpg" controls muted></video>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- videoArea Fin -->  
+
+        <div class="detail_ingre">
+            <div>    
+                <ol>
+                    <li>
+                        <ol>
+                            <li>Product Details
+                                <p><b>THE COLLECTION’S ICONIC FRAGRANCE SELECTION</b> 
+                                    <br>
+                                    A selection of L’Art & La Matière’s iconic scents offering an array of perfume creations to discover and wear as you wish.
+                                    A fragrance journey among the most beautiful masterpieces crafted by Guerlain Perfumers, featuring two fresh scents - Musc Outreblanc, Herbes Troublantes, three ambery scents - Spiritueuse Double Vanille, Cuir Béluga, Angélique Noire, two floral scents - Rose Barbare, Néroli Outrenoir and one woody scent – Oud Nude. <br>
+                                    <br>
+
+                                    <b>THE PERFUMERS' WORDS</b>
+                                    <br>
+                                    "THE ESSENCE OF L’ART & LA MATIÈRE ALLOWS THE RAW MATERIAL TO SHINE, TRANSFORMING IT INTO A WORK OF ART."
+                                    Delphine Jelk <br>
+                                    Guerlain Perfumer <br>
+                                    “WITH L’ART & LA MATIÈRE, GUERLAIN ELEVATES FRAGRANCE TO THE RANK OF ART.”
+                                    <br>
+                                    Thierry Wasser<br>
+                                    Guerlain Master Perfumer<br>
+                                    <br>
+
+                                    <b>CRAFTING RAW MATERIALS INTO ART</b> 
+                                    <br>
+                                    L’Art & La Matière is a collection of olfactory masterpieces expertly crafted by the House of Guerlain Perfumers. Every creation in the L’Art & La Matière collection is born of an artistic emotion, an indelible mark left on each Guerlain Perfumer’s memory. As artists guided by their creative genius, they shape the most beautiful materials to create daring works with talent and passion.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <ol>
+                            <li>
+                                INGREDIENTS
+                                <p><b>LIST OF INGREDIENTS</b><br>
+                                    #14841 INGREDIENTS: <br>
+                                    <br> ALCOHOL 
+                                    <br> AQUA (WATER)
+                                    <br> PARFUM (FRAGRANCE)
+                                    <br> LIMONENE
+                                    <br> BUTYL METHOXYDIBENZOYLMETHANE
+                                    <br> LINALOOL
+                                    <br> CITRAL
+                                    <br> COUMARIN
+                                    <br> CITRONELLOL
+                                    <br> GERANIOL
+                                    <br> PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE
+                                    <br> TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE
+                                    <br> BENZYL BENZOATE
+                                    <br> CI 14700 (RED 4)
+                                    <br> CI 60730 (EXT. VIOLET 2)
+                                    <br> CI 19140 (YELLOW 5)
+                                    <br> Disclaimer : Guerlain product ingredient listings are updated periodically. Before using a Guerlain product, please read the ingredient list on the packaging of your product to be sure that the ingredients are appropriate for your personal use.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>                    
+                </ol>
+            </div>    
+        </div>    
+        <!-- detail & ingredient fin -->
+
+        <div class="service_con">
+            <div class="service_wrap">
+                <div class="service_left">
+                    <h3>OUR SERVICES</h3>
+                    <p>Discover all the services created for you by Guerlain.</p>
+                    <ul class="servicebox">
+                        <li>
+                            <img src="images/lartlaser_1.jpg" alt="">
+                            <h4>ENGRAVING</h4>
+                            <p>Engrave your bottle with initials, a name or your own chosen message.</p>
+                        </li>
+                        <li><img src="images/lartlaser_2.jpg" alt="">
+                            <h4>LIMITED EDITION
+                                PLATES</h4>
+                            <p>Choose from a collection of luxurious and exceptional hand-crafted plates.</p>
+                        </li>
+                        <li><img src="images/lartlaser_3.jpg" alt="">
+                            <h4>FIND YOUR 
+                                GUERLAIN</h4>
+                            <p>Discover the fragrance that fits you in the collection.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service_right">
+                    <img src="images/lartlaser_1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- our service fin -->    
+    </div>
+
+    <div id="popupnews" class="newsoverlay">
+        <div class="newspopup">
+            <h2>OUR NEWSLETTER</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>Subscribe Us To Get More Updates</p>
+                <input type="email" placeholder="Write your email address here.." title="insert your email">
+            </div>
+            <a href="#popupnews2">Subscribe</a> 
+        </div>
+    </div>
+    <div id="popupnews2" class="newsoverlay">
+        <div class="newspopup2">
+            <img src="images/icon_newsletter.png" alt="icon_newsletter">
+            <h2>SUCCESS!</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    Thanks for subscribing! <br>
+                    We’re sending you a confirmation email.
+                </p>
+            </div>
+            <a href="index-after.html">Done</a>  
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2><img src="images/logo_white.png" alt="GUERLAIN_CI_white"></h2>
+            <ul>
+                <li><a href="list_creators.html">ABOUT US</a></li>
+                <li><a href="myAccount.html">MY ACCOUNT</a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+                <li><a href="#popupnews">NEWSLETTER</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="returns.html">Returns</a></li>
+                <li><a href="legalTerms.html">Legal terms</a></li>
+                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+            <p>COPYRIGHT © GUERLAIN ALL RIGHTS RESERVED</p>            
+            <span>
+                <a href="https://www.instagram.com/guerlain" target="_blank">instagram</a>
+                <a href="https://www.youtube.com/channel/UCeHcEArSCMt-0vB47KaahQQ" target="_blank">youTube</a>
+                <a href="https://www.facebook.com/Guerlain" target="_blank">facebook</a>
+                <a href="https://x.com/Guerlain" target="_blank">spaceX</a>
+            </span>
+        </div>
+    </footer>
+    <!-- ? footer Fin -->
+</body>
+</html>
