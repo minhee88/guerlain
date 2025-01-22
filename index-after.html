@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guerlain</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/guerlain.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="icon" href="images/favicon2.ico">
+</head>
+<body>
+    <aside id="menuPanel">
+        <input type="button" value="close" class="closeBtn">        
+        <nav>                     
+            <div>
+                <b>GIFTS</b>
+                <ul>
+                    <!-- <li><a href="list_gifts_all.html">All</a></li> -->
+                    <li><a href="list_gifts_m.html">Men</a></li>
+                    <li><a href="list_gifts_w.html">Women</a></li>
+                    <li><a href="list_bath.html">Bath &amp; Body</a></li>
+                    <li><a href="list_candi.html">Candle &amp; Diffusers</a></li>
+                    <li><a href="list_art.html">Art &amp; Gifting</a></li>
+                </ul>
+            </div>
+            <div>
+                <b>MEN FRAGRANCE</b>
+                <ul>
+                    <li><a href="list_lhomme.html">L&#39;Homme Ideal</a></li>
+                    <li><a href="list_habit.html">Habit Rouge</a></li>
+                    <li><a href="list_iconic.html">Iconic fragrances for men</a></li>
+                    <li><a href="list_lartla.html">L&#39;Art &amp; La Matière Collection</a></li>
+                    <li><a href="list_lesab.html">Les Absolus d&#39;Orient Collection</a></li>
+                    <li><a href="list_lesco.html">Les Colognes</a></li>
+                </ul>
+            </div>
+            <div>
+                <b>WOMEN FRAGRANCE</b>               
+                <ul>
+                    <li><a href="list_lartla.html">L&#39;Art &amp; La Matière Collection</a></li>
+                    <li><a href="list_aqua.html">Aqua Allegoria Collection</a></li>
+                    <li><a href="list_leslegend.html">Les Légendaires Collection</a></li>
+                    <li><a href="list_shali.html">Shalimar</a></li>
+                    <li><a href="list_mon.html">Mon Guerlain</a></li>
+                    <li><a href="list_lapet.html">La Petite Robe Noire</a></li>
+                </ul>
+            </div>
+            <div>
+                <b>PERSONALIZATION</b>                    
+                <ul>
+                    <li><a href="list_except.html">Exceptional Creations</a></li>
+                    <li><a href="list_rendez.html">Guerlain Rendezvous</a></li>
+                    <li><a href="list_lesab.html">Les Absolus d&#39;Orient Collection</a></li>
+                    <li><a href="list_lesco.html">Les Colognes</a></li>
+                    <li><a href="detail_per_ren01.html">Muguet by Anne Lopez</a></li>
+                    <li><a href="detail_per_ren02.html">Cherry Blossom by Philippe Ferrandis</a></li>
+                </ul>                            
+            </div>
+            <div>
+                <b><a href="list_creators.html">ABOUT GUERLAIN</a></b>  
+            </div>                     
+        </nav>
+        <div class="panelfooter">
+            <ul>
+                <li>
+                    <a href="index.html">LOGOUT</a>
+                    <a href="myAccount.html">MY PAGE </a>
+                    <a href="shoppingbag.html">&nbsp; MY BAG</a>
+                </li>
+            </ul>
+        </div>   
+    </aside>
+    <!-- aside fin -->
+
+    <header>
+        <div>
+            <div>
+                <input type="button" value="menu" class="material-icons-outlined" data-panel="menuPanel">
+            </div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo_black.svg" alt="GUERLAIN_CI_black">
+                </a>
+            </h1>
+            <ul>
+                <li><input type="button" value="search" data-popup="searchPopup"></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header fin -->
+
+    <div id="searchPanel">
+        <div>
+            <input type="button" value="close" class="closeBtn">
+            <form>
+                <span>
+                    <input type="search" id="searchField" placeholder="Search..." title="insert your search Keywords">
+                    <input type="submit" value="search">
+                </span>
+            </form>
+            <ul id="searchKeyword">
+                <li><a href="list_lartla.html">#FEATURED</a></li>                                
+                <li><a href="list_candi.html">#DIFFUSERS</a></li>
+                <li><a href="list_bath.html">#BATH & BODY</a></li>
+                <li><a href="list_aqua.html">#NEW</a></li>  
+                <li><a href="list_gifts_w.html">#GIFTS</a></li>           
+            </ul>
+        </div>
+    </div>
+    <!-- search fin -->
+
+    <main class="wrap Main">
+        <section class="slideArea">
+            <div>
+                <ul class="headSlider">
+                    <li class="firstSlide">
+                        <figure>
+                            <img src="images/main_slidebg_1.png" alt="MON GUERLAIN">
+                            <figcaption>
+                                <dl>
+                                    <dt class="tit">MON GUERLAIN</dt>
+                                    <dd>
+                                        SPARKLING<br> 
+                                        BOUQUET<br>
+                                        EAU DE PARFUM
+                                    </dd>            
+                                    <dd>
+                                        A perfumed manifesto of today’s femininity                                
+                                    </dd>                
+                                </dl>
+                                <a href="detail_wf_mon03.html">VIEW MORE</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="secondSlide">
+                        <figure>
+                            <img src="images/main_slidebg_2.png" alt="Les Colognes">
+                            <figcaption>
+                                <dl>
+                                    <dt class="tit">Les Colognes</dt>
+                                    <dd>
+                                        A wonderful <br>
+                                        perfuming<br>
+                                        base
+                                    </dd>            
+                                    <dd>
+                                        it blends perfectly with your usual fragrance                                
+                                    </dd>  
+                                </dl>
+                                <a href="detail_mf_lesco03.html">VIEW MORE</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="thirdSlide">
+                        <figure>
+                            <img src="images/main_slidebg_3.png" alt="L'Art & La Matière">
+                            <figcaption>
+                                <dl>
+                                    <dt class="tit">L'Art  &amp;  La Matière</dt>
+                                    <dd>
+                                        Crafting <br>
+                                        raw materials<br> 
+                                        into art
+                                    </dd>            
+                                    <dd>
+                                        crafted by the hands of Guerlain Perfumers                                
+                                    </dd>  
+                                </dl>
+                                <a href="detail_mf_lartla10.html">VIEW MORE</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--  Main slide Fin -->
+
+        <section class="featureArea">
+            <h2>FEATURED</h2>
+            <ul class="featuredList">
+                <li>
+                    <a href="detail_wf_shali04.html">
+                        <img src="images/shalimar_souffle.jpg" alt="SHALIMAR SOUFFLE DE PARFUM - EAU
+                        DE PARFUM">
+                    </a>
+                    <dl>
+                        <dt>SHALIMAR</dt>
+                        <dd>SHALIMAR SOUFFLE DE PARFUM - EAU DE PARFUM</dd>
+                        <dd>Intensity  ●●●● <strong>$155.00</strong></dd>
+                    </dl>                    
+                </li>
+                <li>
+                    <a href="detail_wf_mon03.html">
+                        <img src="images/mon_guerlain_sparkling.jpg" alt="MON GUELAIN SPARKLING BOUQUET
+                        - EAU DE PARFUM">
+                    </a>
+                    <dl>
+                        <dt>MON GUELAIN</dt>
+                        <dd>MON GUELAIN SPARKLING BOUQUET - EAU DE PARFUM</dd>
+                        <dd>Intensity  ●●●○ <strong>$160.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_wf_shali05.html">
+                        <img src="images/shalimar_extract.jpg" alt="SHALIMAR EXTRACT">
+                    </a>
+                    <dl>
+                        <dt>SHALIMAR</dt>
+                        <dd>EXTRACT</dd>
+                        <dd>Intensity  ●●●○ <strong>$390.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_wf_lapet01.html">
+                        <img src="images/la_petite_parfum.jpg" alt="LA PETITE ROBE NOIRE EAU DE PARFUM">
+                    </a>
+                    <dl>
+                        <dt>LA PETITE ROBE NOIRE</dt>
+                        <dd>EAU DE PARFUM</dd>
+                        <dd>Intensity  ●●●○ <strong>$98.00</strong></dd>
+                    </dl>
+                </li>
+            </ul>
+            <!-- <a href="list_featured.html" class="lineBtn">Find More &gt;</a> -->
+        </section>
+        <!-- featuredArea Fin -->
+
+        
+        <section>
+            <h2>EXCEPTIONAL CREATION</h2>
+            <div class="exArea">
+                <div class="ex_video">
+                    <input type="button" value="▷" class="videoPbtn" data-get="0">
+                    <input type="button" value="||" class="videoSbtn" data-get1="0">
+                    <video id="videoarea" src="videos/ex_video01.mp4" poster="images/ex_video01_thumb.jpg" controls muted width="810" height="475"></video>    
+                      <!--  하단 li -->
+                </div>
+                <div class="ex_product">
+                    <ul>                        
+                        <!-- <li data-src="muguet(재생할파일명을단조롭게미리약속)" data-poster="(앞에생각한이름)Poster"> -->
+                        <li data-src="videos/ex_video01.mp4" data-poster="images/ex_video01_thumb.jpg" >
+                            <img src="images/ex_product01.jpg" alt="GUERLAIN RENDEZVOUS MUGUET">
+                            <dl>
+                                <dt>GUERLAIN RENDEZVOUS</dt>
+                                <dd>MUGUET</dd>
+                                <dd>BY ANNE LOPEZ</dd>
+                                <dd>Intensity  ●●○○ </dd>
+                                <dd>10%<b>$810.00</b><del>$900.00</del></dd>
+                            </dl>
+                        </li>
+                        <li data-src="videos/ex_video02.mp4" data-poster="images/ex_video02_thumb.jpg">
+                            <img src="images/ex_product02.jpg" alt="GUERLAIN RENDEZVOUS CHERRY BLOSSOM">
+                            <dl>
+                                <dt>GUERLAIN RENDEZVOUS</dt>
+                                <dd>CHERRY BLOSSOM</dd>
+                                <dd>EXCEPTIONAL CREATION</dd>
+                                <dd>Intensity  ●●○○ </dd>
+                                <dd><b>$850.00</b></dd>
+                            </dl>
+                        </li> 
+                        <li data-src="videos/ex_video03.mp4" data-poster="images/ex_video03_thumb.jpg">
+                            <img src="images/ex_product03.jpg" alt="GUERLAIN RENDEZVOUS imagine">
+                            <dl>
+                                <dt>EXCEPTIONAL RENDEZVOUS</dt>
+                                <dd>IMAGINE GUERLAIN</dd>
+                                <dd>BY SHOUROUK RHAIEM</dd>
+                                <dd>Intensity  ●●○○ </dd>
+                                <dd><b>$850.00</b></dd>
+                            </dl>
+                        </li>               
+                    </ul>            
+                </div>
+            </div>                      
+        </section>                                     
+        <!-- exceptionalArea Fin -->       
+    
+        <section class="newArea">
+            <h2>NEW ARRIVAL</h2>
+            <ul class="newList">
+                <li>
+                    <a href="detail_mf_lartla15.html">
+                        <img src="images/main_new_1.jpg" alt="SHALIMAR SOUFFLE DE PARFUM - EAU
+                        DE PARFUM">
+                    </a>
+                    <dl>
+                        <dt>SHALIMAR</dt>
+                        <dd>NÉROLI PLEIN SUD – EAU DE PARFUM</dd>
+                        <dd>Intensity  ●●●● <strong>$395.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_gifts_women07.html">
+                        <img src="images/gifts_women07.jpg" alt="gifts_women07">
+                    </a>
+                    <dl>
+                        <dt>SHALIMAR</dt>
+                        <dd>EAU DE PARFUM GIFT SET</dd>
+                        <dd>Intensity  ●●●○ <strong>$130.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_mf_lesco01.html">
+                        <img src="images/main_new_3.png" alt="SHALIMAR EXTRACT">
+                    </a>
+                    <dl>
+                        <dt>Les Colognes</dt>
+                        <dd>EAU DE COLOGNE IMPÉRIALE</dd>
+                        <dd>Intensity  ●○○○ <strong>$115.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_wf_aqua22.html">
+                        <img src="images/main_new_4.jpeg" alt="LA PETITE ROBE NOIRE EAU DE PARFUM">
+                    </a>
+                    <dl>
+                        <dt>Aqua Allegoria</dt>
+                        <dd>ROSA ROSSA - EAU DE TOIL ETTE GIFT SET</dd>
+                        <dd>Intensity  ●●○○ <strong>$115.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_gifts_men04.html">
+                        <img src="images/gifts_men04.jpg" alt="gifts_men04">
+                    </a>
+                    <dl>
+                        <dt>L'ART & LA MATIÈRE</dt>
+                        <dd>Rose Chérie gift set</dd>
+                        <dd>Intensity  ●●●○ <strong>$715.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_gifts_men02.html">
+                        <img src="images/gifts_women02.jpg" alt="gifts_women02">
+                    </a>
+                    <dl>
+                        <dt>L'ART & LA MATIÈRE</dt>
+                        <dd>THE PERFUMER'S SET - FLORAL HARMONY</dd>
+                        <dd>Intensity  ●●●● <strong>$395.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_per_ex01.html">
+                        <img src="images/per_ex01.jpg" alt="Exceptional Creations01">
+                    </a>
+                    <dl>
+                        <dt>BOUQUET DE LA MARIÉE</dt>
+                        <dd>BY PHILIPPE FERRANDIS</dd>
+                        <dd>Intensity  ●●●○ <strong>$22,000.00</strong></dd>                        
+                    </dl>
+                </li>
+                <li>
+                    <a href="detail_per_ex11.html">
+                        <img src="images/per_ex11.jpg" alt="Exceptional Creations11">
+                    </a>
+                    <dl>
+                        <dt>THE BEE BOTTLE</dt>
+                        <dd>By Germanier - 2021</dd>
+                        <dd>Intensity  ●●●● <strong>$22,000.00</strong></dd>                        
+                    </dl>
+                </li>
+            </ul>
+            <!-- <a href="list_new.html" class="lineBtn">Find More &gt;</a> -->
+        </section>
+        <!-- newArea Fin -->
+    
+        <section>
+            <h2></h2>
+        </section>
+        <!-- ParallaxScrolling -->
+        
+        <section class="collectionArea">
+        </section>
+        <!-- collectionArea Fin -->
+
+        <section>
+            <div class="txtBox">
+                <h2>GIFT SETS</h2>
+                <p>For Guerlain,<br>
+                    gifting is an art and<br>
+                    art is an emotion. </p>
+                <a href="list_art.html" class="lineBtn"> Find More &gt;</a>
+            </div>        
+            <div class="gift_container">
+                <div class="slider-wrapper">
+                    <!-- <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button> -->
+                    <div class="main_gift_list">
+                        <img src="images/main_gift_1.jpg" alt="img-1" class="image-item">
+                        <img src="images/main_gift_2.jpg" alt="img-2" class="image-item">
+                        <img src="images/main_gift_3.jpg" alt="img-3" class="image-item">
+                        <img src="images/main_gift_4.jpg" alt="img-4" class="image-item">                
+                        <img src="images/main_gift_5.jpg" alt="img-5" class="image-item">
+                    </div>
+                    <!-- <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button> -->
+                </div>
+                <!-- <div class="slider-scrollbar">
+                    <div class="scrollbar-track">
+                        <div class="scrollbar-thumb"></div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <!-- giftArea Fin -->             
+        
+    </main>
+
+    <div id="popupnews" class="newsoverlay">
+        <div class="newspopup">
+            <h2>OUR NEWSLETTER</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>Subscribe Us To Get More Updates</p>
+                <input type="email" placeholder="Write your email address here.." title="insert your email">
+            </div>
+            <a href="#popupnews2">Subscribe</a> 
+        </div>
+    </div>
+    <div id="popupnews2" class="newsoverlay">
+        <div class="newspopup2">
+            <img src="images/icon_newsletter.png" alt="icon_newsletter">
+            <h2>SUCCESS!</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    Thanks for subscribing! <br>
+                    We’re sending you a confirmation email.
+                </p>
+            </div>
+            <a href="index-after.html">Done</a>  
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2><img src="images/logo_white.png" alt="GUERLAIN_CI_white"></h2>
+            <ul>
+                <li><a href="list_creators.html">ABOUT US</a></li>
+                <li><a href="myAccount.html">MY ACCOUNT</a></li>
+                <li><a href="contactUs.html">CONTACT US</a></li>
+                <li><a href="#popupnews">NEWSLETTER</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="shipping.html">Shipping</a></li>
+                <li><a href="returns.html">Returns</a></li>
+                <li><a href="legalTerms.html">Legal terms</a></li>
+                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+            <p>COPYRIGHT © GUERLAIN ALL RIGHTS RESERVED</p>            
+            <span>
+                <a href="https://www.instagram.com/guerlain" target="_blank">instagram</a>
+                <a href="https://www.youtube.com/channel/UCeHcEArSCMt-0vB47KaahQQ" target="_blank">youTube</a>
+                <a href="https://www.facebook.com/Guerlain" target="_blank">facebook</a>
+                <a href="https://x.com/Guerlain" target="_blank">spaceX</a>
+            </span>
+        </div>
+    </footer>
+    <!-- ? footer Fin -->
+</body>
+</html>
