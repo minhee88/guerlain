@@ -266,7 +266,7 @@
 
 
     .Main > section:nth-of-type(5){
-        background:url('../images/main_ScrollingBG.png');
+        background:url('../images/main_ScrollingBG.webp');
         background-position: center;
         background-size: cover; 
         background-repeat: no-repeat;
@@ -3200,14 +3200,14 @@
 
 
     .Main > section:nth-of-type(5){
-        background:url('../images/main_ScrollingBG.png');
+        background:url('../images/main_ScrollingBG.webp');
         background-position: center;
         background-size: cover; 
         background-repeat: no-repeat;
         height:300px;
     }
     /* .Main > section:nth-of-type(5){
-        background:url('../images/main_ScrollingBG.png');
+        background:url('../images/main_ScrollingBG.webp');
         position: relative;
         height: 300px;
         overflow: hidden;
@@ -6148,7 +6148,7 @@
 
 
     .Main > section:nth-of-type(5){
-        background:url('../images/main_ScrollingBG.png')center / cover no-repeat fixed;          
+        background:url('../images/main_ScrollingBG.webp')center / cover no-repeat fixed;          
         height:400px;
     }
     /* ParallaxScrolling */
