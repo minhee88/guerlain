@@ -1661,3 +1661,25 @@
   };
 
 })(jQuery);
+
+// 페이지 로드 완료 후 첫 방문일 때만 새로고침 실행
+$(document).ready(function() {
+  if (!localStorage.getItem('reloaded')) {  // 페이지 새로고침 여부 확인
+      setTimeout(function() {
+          location.reload();  // 페이지 새로고침
+      }, 1000);  // 1초 후에 새로고침
+      localStorage.setItem('reloaded', 'true');  // 새로고침 후 상태 저장
+  }
+  
+  // bxSlider 초기화
+  $('.bxslider').bxSlider({
+      useCSS: false,  // CSS 애니메이션 대신 JS 애니메이션 사용
+      adaptiveHeight: false,  // 높이 자동 조정 비활성화
+      controls: true,  // 이전/다음 버튼 활성화
+      pager: true,  // 페이지네이션 활성화
+      touchEnabled: true,  // 모바일 터치 스와이프 가능
+      autoControls: false,  // 자동 슬라이드 컨트롤 비활성화
+      autoDelay: 3000  // 3초 후 자동 슬라이드 시작
+  });
+});
+
