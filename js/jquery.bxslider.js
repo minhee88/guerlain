@@ -1682,21 +1682,3 @@ $(document).ready(function() {
       autoDelay: 3000  // 3초 후 자동 슬라이드 시작
   });
 });
-$(document).ready(function () {
-  console.log('Document is ready! Initializing bxSlider...');
-  
-  if ($('.bxslider').length > 0) {
-      $('.bxslider').bxSlider({
-          controls: true,  // 기존 옵션 유지
-          pagerType: 'full',
-          auto: true,
-          autoControls: true,
-          autoControlsCombine: true,
-          touchEnabled: false,
-          autoDelay: 3000
-      });
-  } else {
-      console.error('bxSlider element not found!');
-  }
-});
-
