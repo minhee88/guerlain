@@ -5,13 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>guerlain</title>
+
+    <!-- ✅ jQuery를 가장 먼저 로드 -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- ✅ 나머지 스크립트는 jQuery 이후에 로드 -->
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
     <script src="js/guerlain.js"></script>
+
+    <!-- bxSlider 초기화 스크립트 -->
+    <script>
+        $(document).ready(function () {
+            console.log("Document is ready!");
+            console.log("jQuery version:", $.fn.jquery); // jQuery 버전 확인
+
+            if (typeof $.fn.bxSlider === "undefined") {
+                console.error("Error: bxSlider is not loaded!");
+                return;
+            }
+
+            $(".bxslider").bxSlider({
+                controls: true,
+                pagerType: "full",
+                auto: true,
+                autoControls: true,
+                autoControlsCombine: true,
+                touchEnabled: false,
+                autoDelay: 3000
+            });
+        });
+    </script>
+
     <link rel="stylesheet" href="css/import.css">
     <link rel="icon" href="images/favicon2.ico">
 </head>
+
 <body>
     <aside id="menuPanel">
         <input type="button" value="close" class="closeBtn">        
