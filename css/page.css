@@ -5851,29 +5851,7 @@
     .Main section div ul li{
         display: block;
     }
-    .slideArea > ul li{
-        position: relative;
-        text-align: center;
-    }
-    .slideArea ul.headSlider li{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 30vw 0; 
-        text-align: center;
-    }
-    .Main .slideArea ul.headSlider li.firstSlide{
-        background-image: url("../images/main_slidebg_1.webp");
-    }
-    .Main .slideArea ul.headSlider li.secondSlide{
-        background-image: url("../images/main_slidebg_2.webp");
-    }
-    .Main .slideArea ul.headSlider li.thirdSlide{
-        background-image: url("../images/main_slidebg_3.webp");
-    }
-    .slideArea > ul li img{
-        width: 100%;
-    }
+    
     .Main section div ul li figure{
         position: relative;
     }
