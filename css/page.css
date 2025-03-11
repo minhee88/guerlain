@@ -16,19 +16,13 @@
         height: auto;
     }
     .Main section div ul li.firstSlide figure img{
-        margin-left: -25%;
+        margin-left: -15%;
     }
     .Main section div ul li.secondSlide figure img{
-        margin-left: -50%;
+        margin-left: -35%;
     }
     .Main section div ul li.thirdSlide figure img{
-        margin-left: -60%;
-    }
-    .Main section.slideArea div ul.headSlider li figure figcaption{
-        position: absolute;  
-        width: 100%;
-        top: 1%; 
-        background-color: rgb(47, 47, 47, 0.1);
+        margin-left: -35%;
     }
     .Main section div ul li figure figcaption dl{
         text-align: center;
@@ -38,18 +32,20 @@
         display: none;
     }
     .Main section div ul li figure figcaption dl dd:nth-of-type(1){
-        font-size: 16px;
-        line-height: 130%;
-        font-weight: 400;
-        text-transform: uppercase; 
-        text-align: center;
-        color: #fff;
-        margin:175px auto;
+        display: none;
     }
     .Main section div ul li figure figcaption dl dd:nth-of-type(2){
         display: none;
     }
     .Main section div ul li figure figcaption a{
+        /* position: absolute;
+        font-size: 14px;
+        border:1px solid #fff;
+        padding:3% 4%;
+        right:55%;
+        bottom:62%;
+        color:#fff;
+        background-color: rgb(47, 47, 47, 0.5); */
         display: none;
     }
     /*  Main slide Fin */
