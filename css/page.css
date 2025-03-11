@@ -1,6 +1,69 @@
 
 
 @media screen and (max-width: 767px){
+    .mainPopup.active .mainPopupContent{
+        position: relative;
+    }
+    .mainPopup{
+        display: none;
+    }
+    .mainPopup.active{        
+        display: flex; 
+        flex-flow: row wrap; 
+        align-content: center; 
+        position: fixed; 
+        left: 0; 
+        top: 0; 
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%; 
+        height: 100%; 
+        z-index: 9998; 
+        overflow-y: scroll; 
+        box-sizing: border-box;
+    }
+    .mainPopup.active .mainPopupContent{
+        margin: 0 auto; 
+        width: 85%; 
+        border-radius: 20px; 
+        padding: 40px 3%; 
+        box-sizing: border-box; 
+        text-align: center;
+        background:url('../images/backimg_03.jpg') no-repeat center / cover;
+    }
+    .mainPopup.active .mainPopupContent h2{
+        color: #fff;
+        margin-bottom: 45px; 
+        font-size: 30px;
+        font-weight: 300;
+        text-shadow: 2px 2px #b7b7b7;
+    }
+    .mainPopup.active .mainPopupContent p{
+        color: #fff; 
+        line-height: 18px; 
+        text-shadow: 2px 2px #b7b7b7;
+    }
+    .mainPopup.active .mainPopupContent p:first-of-type{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .mainPopup.active .mainPopupContent p:last-of-type{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .mainPopup.active .mainPopupContent a{
+        color:#fff;
+    }
+    .mainPopup.active .mainPopupContent .popupClose{
+        bottom: -35px; 
+        left: 0; 
+        color:#E4BEB6; 
+        width: 100%; 
+        /* padding: 0 40%;  */
+        text-align: center;
+        position:absolute;
+        cursor: pointer;
+    }
+
     .headSlider > li figure{
         overflow-x: hidden;
     }
@@ -2909,6 +2972,69 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
+    .mainPopup.active .mainPopupContent{
+        position: relative;
+    }
+    .mainPopup{
+        display: none;
+    }
+    .mainPopup.active{        
+        display: flex; 
+        flex-flow: row wrap; 
+        align-content: center; 
+        position: fixed; 
+        left: 0; 
+        top: 0; 
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%; 
+        height: 100%; 
+        z-index: 9998; 
+        overflow-y: scroll; 
+        box-sizing: border-box;
+    }
+    .mainPopup.active .mainPopupContent{
+        margin: 0 auto; 
+        width: 85%; 
+        border-radius: 20px; 
+        padding: 40px 3%; 
+        box-sizing: border-box; 
+        text-align: center;
+        background:url('../images/backimg_03.jpg') no-repeat center / cover;
+    }
+    .mainPopup.active .mainPopupContent h2{
+        color: #fff;
+        margin-bottom: 45px; 
+        font-size: 30px;
+        font-weight: 300;
+        text-shadow: 2px 2px #b7b7b7;
+    }
+    .mainPopup.active .mainPopupContent p{
+        color: #fff; 
+        line-height: 18px; 
+        text-shadow: 2px 1px #b7b7b7;
+    }
+    .mainPopup.active .mainPopupContent p:first-of-type{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .mainPopup.active .mainPopupContent p:last-of-type{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .mainPopup.active .mainPopupContent a{
+        color:#fff;
+    }
+    .mainPopup.active .mainPopupContent .popupClose{
+        bottom: -35px; 
+        left: 0; 
+        color:#E4BEB6; 
+        width: 100%; 
+        /* padding: 0 40%;  */
+        text-align: center;
+        position:absolute;
+        cursor: pointer;
+    }
+
     .headSlider > li figure{
         overflow-x: hidden;
     }
@@ -5853,6 +5979,73 @@
 
 
 @media screen and (min-width: 1280px){  
+    .mainPopup.active .mainPopupContent{
+        position: relative;
+    }
+    .mainPopup{
+        display: none;
+        background-color: #000;
+    }
+    .mainPopup.active{        
+        display: block; 
+        position: fixed; 
+        left: 0; 
+        top: 0; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        width: 100%; 
+        height: 100%; 
+        z-index: 9998;
+    }
+    .mainPopup.active .mainPopupContent{
+        background-color: #aaa;
+        background:url('../images/backimg_03.jpg') no-repeat center / cover; 
+        position: fixed; 
+        top: 30%; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 720px; 
+        height: 30%; 
+        border-radius: 20px; 
+        padding: 50px 3%; 
+        box-sizing: border-box; 
+        z-index: 9999; 
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5); 
+        text-align: center; 
+        min-height: 300px;
+    }
+    .mainPopup.active .mainPopupContent h2{
+        color: #fff;
+         margin-bottom: 45px; 
+        font-size: 30px;
+        font-weight: 300;
+        text-shadow: 2px 2px #b7b7b7;
+    }
+    .mainPopup.active .mainPopupContent p{
+        color: #fff; 
+        line-height: 18px;       
+        text-shadow: 2px 2px #b7b7b7;  
+    }
+    .mainPopup.active .mainPopupContent p:first-of-type{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .mainPopup.active .mainPopupContent p:last-of-type{
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    .mainPopup.active .mainPopupContent a{
+        color:#fff;
+    }
+    .mainPopup.active .mainPopupContent .popupClose{
+        position:absolute;
+        bottom: -35px; 
+        left: 0; 
+        color:#E4BEB6; 
+        width: 20%; 
+        padding: 0 40%; 
+        cursor: pointer;
+    }
+
     .headSlider > li figure{
         overflow-x: hidden;
     } 
