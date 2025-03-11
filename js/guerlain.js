@@ -18,7 +18,15 @@ $(document).ready(function(){
     quantityComponent(".cartContainer > ul li .numberComponent .countNo2",".countMinus2",".countPlus2","#price2");
     quantityComponent(".cartContainer > ul li .numberComponent .countNo3",".countMinus3",".countPlus3","#price3");
     accControl(".accComponent h4");
+    mainPopup();
 });
+function mainPopup(){
+    $(".popupClose").click(function(){
+        $(".mainPopup").addClass("active");
+        $(".mainPopup").fadeOut();
+        $(".mainPopupContent").fadeOut();
+    });
+}
 function sliderFunc(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delayVal){
     $(target).bxSlider({
         controls: conVal,
