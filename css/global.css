@@ -1,5 +1,6 @@
-body{
+html, body{
     font-family: 'Montserrat';
+    height: 100%;
 }
 a{
     text-decoration: none; color: inherit; 
@@ -59,13 +60,7 @@ input[type=checkbox] {
     z-index: 1000;
 }
 
-/* header > div ul li input[value='search'].active{
-    background-image: url('../images/close_btn.png') center no-repeat;
-    text-indent: -9999px; border: none;
-} */
-
 header > div h1 a img{
-    /* width:218px; */
     padding:20px 0 0 0;
 }
 input[type='button'],

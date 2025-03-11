@@ -83,7 +83,8 @@
     shrinkItems: false,
 
     // CALLBACKS
-    onSliderLoad: function() { return true; },
+    onSliderLoad: function(){$('.bx-pager').css('bottom', '5%');},// Pager 위치 조정
+    // onSliderLoad: function() { return true; },
     onSlideBefore: function() { return true; },
     onSlideAfter: function() { return true; },
     onSlideNext: function() { return true; },

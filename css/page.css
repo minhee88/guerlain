@@ -11,8 +11,9 @@
         position: relative;
     }
     .Main section div ul li figure img{
-        display: block; 
+        /* display: block; */
         width: 100%;
+        /* width: 200%; */
     }
     .Main section div ul li figure figcaption{
         position: absolute;  top: 19%; left: 58%; color: #333;
@@ -2914,7 +2915,7 @@
         position: relative;
     }
     .Main section div ul li figure img{
-        display: block; 
+        /* display: block; */
         width: 100%;
     }
     .Main section div ul li figure figcaption{
@@ -5855,7 +5856,7 @@
         position: relative;
     }
     .Main section div ul li figure img{
-        display: block; 
+        /* display: block; */
         width: 100%;
     }
     .Main section div ul li figure figcaption{
