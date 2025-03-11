@@ -17,30 +17,20 @@
 .bxslider {
   margin: 0;
   padding: 0;
-  /*fix flickering when used background-image instead of <img> (on Chrome)*/
-  -webkit-perspective: 1000;
 }
 ul.bxslider {
   list-style: none;
 }
-.bx-viewport {
-  /* fix other elements on the page moving (in Chrome) */
-  -webkit-transform: translateZ(0);
-}
 /** THEME
 ===================================*/
 .bx-wrapper {
-  /* -moz-box-shadow: 0 0 5px #ccc; */
-  /* -webkit-box-shadow: 0 0 5px #ccc; */
-  /* box-shadow: 0 0 5px #ccc; */
-  /* border: 5px solid #fff; */
   background: #fff;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
   /* bottom: -30px; */
-  /* width: 100%; */
+  width: 100%;
 }
 /* LOADER */
 .bx-wrapper .bx-loading {
@@ -57,7 +47,6 @@ ul.bxslider {
 .bx-wrapper .bx-pager {
   text-align: center;
   font-size: .85em;
-  /* font-family: Arial; */
   font-weight: bold;
   color: #666;
   padding-top: 20px;
@@ -70,9 +59,6 @@ ul.bxslider {
   height: 10px;
   margin: 0 5px;
   outline: 0;
-  /* -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; */
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
@@ -83,8 +69,6 @@ ul.bxslider {
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
   vertical-align: bottom;
-  /* zoom: 1; */
-  /* display: inline; */
 }
 .bx-wrapper .bx-pager-item {
   font-size: 0;
@@ -115,7 +99,6 @@ ul.bxslider {
   width: 32px;
   height: 32px;
   text-indent: -9999px;
-  /* z-index: 9999; */
 }
 .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
@@ -130,7 +113,6 @@ ul.bxslider {
   width: 10px;
   height: 11px;
   outline: 0;
-  /* background: url('../images/controls.png') -86px -11px no-repeat; */
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-start:hover,
@@ -144,7 +126,6 @@ ul.bxslider {
   width: 9px;
   height: 11px;
   outline: 0;
-  /* background: url('../images/controls.png') -86px -44px no-repeat; */
   margin: 0 3px;
 }
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
@@ -153,10 +134,6 @@ ul.bxslider {
   background-position: -86px -33px;
 }
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-/* .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-  text-align: left;
-  width: 80%; 
-} */
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
   right: 0;
   width: 35px;
@@ -177,13 +154,59 @@ ul.bxslider {
   font-size: .85em;
   padding: 10px;
 }
+/* All using */
+
 @media screen and (max-width: 767px){
   .bx-wrapper img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    height:100%;
   }
   .bx-wrapper .bx-controls-direction a {
     display: none;
+  }
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgb(0, 0, 0, 0.2);
+    text-indent: -9999px;
+    display: block;
+    width: 26px;
+    height: 2px;
+  }
+  .bx-wrapper .bx-pager,
+  .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgb(0, 0, 0, 0.2);
+    text-indent: -9999px;
+    display: block;
+    width: 40px;
+    height: 3px;
+  }
+  .bx-wrapper .bx-pager,
+  .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1280px){   
+  .bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgb(0, 0, 0, 0.2);
+    text-indent: -9999px;
+    display: block;
+    width: 60px;
+    height: 3px;
+  }
+  .bx-wrapper .bx-pager,
+  .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
   }
 }

@@ -127,13 +127,25 @@ function sliderFunc(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delay
     $(target).bxSlider({
         controls: conVal,
         pagerType: pagVal,
-        auto: autoVal,
+        auto: false,
         autoControls: autoConVal, 
         autoControlsCombine: autoCombineVal,
         touchEnabled: false,
         autoDelay: delayVal
     });
 }
+// function sliderFunc(target, mod, minS, maxS, margin, slidew, pt){
+//     $(target).bxSlider({
+//         mode: mod,
+//         touchEnabled: false,
+//         auto: false,
+//         minSlides: minS, 
+//         maxSlides: maxS,
+//         slideMargin: margin,
+//         slideWidth: slidew,
+//         pagerType: pt
+//     });
+// }
 
 function openCloseControl(target){
     var dataPanel=null;    

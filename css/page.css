@@ -11,8 +11,8 @@
         position: relative;
     }
     .Main section div ul li figure img{
-        display: block; width: 100%;
-        background-image: url('images/main_slidebg_m1.png');
+        display: block; 
+        width: 100%;
     }
     .Main section div ul li figure figcaption{
         position: absolute;  top: 19%; left: 58%; color: #333;

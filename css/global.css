@@ -74,27 +74,7 @@ input[type='submit']{
 }
 /* All using */
 
-@media screen and (max-width: 767px){
-    .bx-wrapper .bx-pager.bx-default-pager a {
-      background: rgb(0, 0, 0, 0.2);
-      text-indent: -9999px;
-      display: block;
-      width: 26px;
-      height: 2px;
-      /* opacity: 0.7; */
-      /* margin: 0; */
-    }
-    .bx-wrapper .bx-pager,
-    .bx-wrapper .bx-controls-auto {
-      position: absolute;
-      bottom: 10px;
-      /* width: 100%; */
-    }
-    /*.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager 
-      text-align: left;
-      width: 80%; 
-    }*/
-    
+@media screen and (max-width: 767px){    
     .aboutsinCon .bx-wrapper{
       background-color:#f8f9fb;
     }
@@ -567,27 +547,7 @@ input[type='submit']{
 /* mobile */
 
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
-    .bx-wrapper .bx-pager.bx-default-pager a {
-      background: rgb(0, 0, 0, 0.2);
-      text-indent: -9999px;
-      display: block;
-      width: 40px;
-      height: 3px;
-      /* opacity: 0.7; */
-      /* margin: 0; */
-    }
-    .bx-wrapper .bx-pager,
-    .bx-wrapper .bx-controls-auto {
-      position: absolute;
-      bottom: 30px;
-      width: 100%;
-    }
-    /*.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager 
-      text-align: left;
-      width: 80%; 
-    }*/
-    
+@media screen and (min-width: 768px) and (max-width: 1279px){    
     .aboutsinCon .bx-wrapper{
       background-color:#f8f9fb;
     }
@@ -1044,27 +1004,7 @@ input[type='submit']{
 /* tablet */
 
 
-@media screen and (min-width: 1280px){   
-    .bx-wrapper .bx-pager.bx-default-pager a {
-      background: rgb(0, 0, 0, 0.2);
-      text-indent: -9999px;
-      display: block;
-      width: 60px;
-      height: 3px;
-      /* opacity: 0.7; */
-      /* margin: 0; */
-    }
-    .bx-wrapper .bx-pager,
-    .bx-wrapper .bx-controls-auto {
-      position: absolute;
-      bottom: 45px;
-      width: 100%;
-    }
-    /*.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager 
-      text-align: left;
-      width: 80%; 
-    }*/
-    
+@media screen and (min-width: 1280px){
     .aboutsinCon .bx-wrapper{
       background-color:#f8f9fb;
     }

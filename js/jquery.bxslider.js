@@ -368,7 +368,7 @@
           // add the current slide to the children
           children = slider.children.eq(currentIndex);
           // cycle through the remaining "showing" slides
-          for (i = 1; i <= slider.settings.maxSlides - 1; i++) {
+          for (var i = 1; i <= slider.settings.maxSlides - 1; i++) {
             // if looped back to the start
             if (currentIndex + i >= slider.children.length) {
               children = children.add(slider.children.eq(i - 1));
@@ -1106,7 +1106,7 @@
       if (e.type !== 'touchstart' && e.button !== 0) {
         return;
       }
-      e.preventDefault();
+      // e.preventDefault();
       //disable slider controls while user is interacting with slides to avoid slider freeze that happens on touch devices when a slide swipe happens immediately after interacting with slider controls
       slider.controls.el.addClass('disabled');
 
@@ -1117,12 +1117,12 @@
         slider.touch.originalPos = el.position();
         var orig = e.originalEvent,
         touchPoints = (typeof orig.changedTouches !== 'undefined') ? orig.changedTouches : [orig];
-		var chromePointerEvents = typeof PointerEvent === 'function'; 
-		if (chromePointerEvents) { 
-			if (orig.pointerId === undefined) { 
-				return;
-			} 
-		}
+        var chromePointerEvents = typeof PointerEvent === 'function'; 
+        if (chromePointerEvents) { 
+          if (orig.pointerId === undefined) { 
+            return;
+          } 
+        }
         // record the starting touch x, y coordinates
         slider.touch.start.x = touchPoints[0].pageX;
         slider.touch.start.y = touchPoints[0].pageY;
@@ -1187,13 +1187,19 @@
 
       // x axis swipe
       if ((xMovement * 3) > yMovement && slider.settings.preventDefaultSwipeX) {
-        e.preventDefault();
-      // y axis swipe
+        if(e.hasOwnProperty('cancelable') && e.cancelable) {
+          e.preventDefault();
+        }
+        // y axis swipe
       } else if ((yMovement * 3) > xMovement && slider.settings.preventDefaultSwipeY) {
-        e.preventDefault();
+        if(e.hasOwnProperty('cancelable') && e.cancelable) {
+          e.preventDefault();
+        }
       }
       if (e.type !== 'touchmove') {
-        e.preventDefault();
+        if(e.hasOwnProperty('cancelable') && e.cancelable) {
+          e.preventDefault();
+        }
       }
 
       if (slider.settings.mode !== 'fade' && slider.settings.oneToOneTouch) {
@@ -1661,25 +1667,3 @@
   };
 
 })(jQuery);
-
-// 페이지 로드 완료 후 첫 방문일 때만 새로고침 실행
-$(document).ready(function() {
-  if (!localStorage.getItem('reloaded')) {  // 페이지 새로고침 여부 확인
-      setTimeout(function() {
-          location.reload();  // 페이지 새로고침
-      }, 1000);  // 1초 후에 새로고침
-      localStorage.setItem('reloaded', 'true');  // 새로고침 후 상태 저장
-  }
-  
-  // bxSlider 초기화
-  $('.bxslider').bxSlider({
-      useCSS: false,  // CSS 애니메이션 대신 JS 애니메이션 사용
-      adaptiveHeight: false,  // 높이 자동 조정 비활성화
-      controls: true,  // 이전/다음 버튼 활성화
-      pager: true,  // 페이지네이션 활성화
-      touchEnabled: true,  // 모바일 터치 스와이프 가능
-      autoControls: false,  // 자동 슬라이드 컨트롤 비활성화
-      autoDelay: 3000  // 3초 후 자동 슬라이드 시작
-  });
-});
-
