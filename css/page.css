@@ -35,12 +35,12 @@
         margin-bottom: 45px; 
         font-size: 30px;
         font-weight: 300;
-        text-shadow: 2px 2px #b7b7b7;
+        /* text-shadow: 2px 2px #b7b7b7; */
     }
     .mainPopup.active .mainPopupContent p{
         color: #fff; 
         line-height: 18px; 
-        text-shadow: 2px 2px #b7b7b7;
+        /* text-shadow: 2px 2px #b7b7b7; */
     }
     .mainPopup.active .mainPopupContent p:first-of-type{
         font-size: 15px;
@@ -3006,12 +3006,12 @@
         margin-bottom: 45px; 
         font-size: 30px;
         font-weight: 300;
-        text-shadow: 2px 2px #b7b7b7;
+        /* text-shadow: 2px 2px #b7b7b7; */
     }
     .mainPopup.active .mainPopupContent p{
         color: #fff; 
         line-height: 18px; 
-        text-shadow: 2px 1px #b7b7b7;
+        /* text-shadow: 2px 1px #b7b7b7; */
     }
     .mainPopup.active .mainPopupContent p:first-of-type{
         font-size: 15px;
@@ -6018,12 +6018,12 @@
          margin-bottom: 45px; 
         font-size: 30px;
         font-weight: 300;
-        text-shadow: 2px 2px #b7b7b7;
+        /* text-shadow: 2px 2px #b7b7b7; */
     }
     .mainPopup.active .mainPopupContent p{
         color: #fff; 
         line-height: 18px;       
-        text-shadow: 2px 2px #b7b7b7;  
+        /* text-shadow: 2px 2px #b7b7b7; */
     }
     .mainPopup.active .mainPopupContent p:first-of-type{
         font-size: 15px;
