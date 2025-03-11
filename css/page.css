@@ -1,6 +1,9 @@
 
 
 @media screen and (max-width: 767px){
+    .headSlider > li figure{
+        overflow-x: hidden;
+    }
     .Main section.slideArea{
         margin-top: 50px;
     }
@@ -11,18 +14,28 @@
         position: relative;
     }
     .Main section div ul li figure img{
-        /* display: block; */
-        width: 100%;
-        /* width: 200%; */
+        min-width: 900px;
     }
+    /* .Main section div ul li:nth-child(1) figure{
+        background:url('../images/main_slidebg_m1.png')center / cover no-repeat;
+    } */
+
     .Main section div ul li figure figcaption{
-        position: absolute;  top: 19%; left: 58%; color: #333;
+        position: absolute;  
+        /* top: 19%; 
+        left: 58%;  */
+        top: 12.96%; 
+        left: 11.97%;
+        color: #333;
+        width: 13.54%; 
+        max-width: 260px;
     }
     .Main section div ul li figure figcaption dl dt{
-        font-size: 1.7vw;
+        /* font-size: 1.7vw;
         line-height: 220%; 
         font-weight: 500; 
-        text-transform: uppercase;
+        text-transform: uppercase; */
+        display: none;
     }
     .Main section div ul li figure figcaption dl dd:nth-of-type(1){
         font-size: 3vw;
@@ -43,6 +56,8 @@
         line-height: 300%;
         padding:4% 6%;
         border: 1px solid #333;
+        display: block; 
+        text-indent: -9999px;
     }
     /*  Main slide Fin */
   

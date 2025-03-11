@@ -19,6 +19,18 @@ $(document).ready(function(){
     quantityComponent(".cartContainer > ul li .numberComponent .countNo3",".countMinus3",".countPlus3","#price3");
     accControl(".accComponent h4");
 });
+function sliderFunc(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delayVal){
+    $(target).bxSlider({
+        controls: conVal,
+        pagerType: pagVal,
+        // auto: false,
+        auto: autoVal,
+        autoControls: autoConVal, 
+        autoControlsCombine: autoCombineVal,
+        touchEnabled: false,
+        autoDelay: delayVal
+    });
+}
 function accControl(target){
     $(target).click(function(){
         $(this).toggleClass("active");
@@ -121,18 +133,6 @@ function videoControls2(){
             $('.video_list .videoPbtn').show();
             $('.video_list .videoSbtn').hide();                  
         }
-    });
-}
-function sliderFunc(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delayVal){
-    $(target).bxSlider({
-        controls: conVal,
-        pagerType: pagVal,
-        // auto: false,
-        auto: autoVal,
-        autoControls: autoConVal, 
-        autoControlsCombine: autoCombineVal,
-        touchEnabled: false,
-        autoDelay: delayVal
     });
 }
 
