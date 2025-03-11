@@ -7,57 +7,50 @@
     .Main section.slideArea{
         margin-top: 50px;
     }
-    .Main section div ul li{
-        display: block;
-    }
     .Main section div ul li figure{
         position: relative;
     }
     .Main section div ul li figure img{
         min-width: 900px;
+        max-width: 100%;
+        height: auto;
     }
-    /* .Main section div ul li:nth-child(1) figure{
-        background:url('../images/main_slidebg_m1.png')center / cover no-repeat;
-    } */
-
-    .Main section div ul li figure figcaption{
+    .Main section div ul li.firstSlide figure img{
+        margin-left: -25%;
+    }
+    .Main section div ul li.secondSlide figure img{
+        margin-left: -50%;
+    }
+    .Main section div ul li.thirdSlide figure img{
+        margin-left: -60%;
+    }
+    .Main section.slideArea div ul.headSlider li figure figcaption{
         position: absolute;  
-        /* top: 19%; 
-        left: 58%;  */
-        top: 12.96%; 
-        left: 11.97%;
-        color: #333;
-        width: 13.54%; 
-        max-width: 260px;
+        width: 100%;
+        top: 1%; 
+        background-color: rgb(47, 47, 47, 0.1);
+    }
+    .Main section div ul li figure figcaption dl{
+        text-align: center;
+        top: 65%;
     }
     .Main section div ul li figure figcaption dl dt{
-        /* font-size: 1.7vw;
-        line-height: 220%; 
-        font-weight: 500; 
-        text-transform: uppercase; */
         display: none;
     }
     .Main section div ul li figure figcaption dl dd:nth-of-type(1){
-        font-size: 3vw;
-        line-height: 140%; 
-        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        font-weight: 400;
         text-transform: uppercase; 
+        text-align: center;
+        color: #fff;
+        margin:175px auto;
     }
     .Main section div ul li figure figcaption dl dd:nth-of-type(2){
-        font-size: 1.5vw;
-        line-height: 300%; 
-        font-weight: 400;
-        text-transform: lowercase; 
-        margin-bottom: 3%;
+        display: none;
     }
     .Main section div ul li figure figcaption a{
-        font-size: 1.2vw;
-        font-weight: 700;
-        line-height: 300%;
-        padding:4% 6%;
-        border: 1px solid #333;
-        display: block; 
-        text-indent: -9999px;
+        display: none;
     }
     /*  Main slide Fin */
   
@@ -2920,6 +2913,9 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
+    .headSlider > li figure{
+        overflow-x: hidden;
+    }
     .Main section.slideArea{
         margin-top:70px;
     }
@@ -5860,7 +5856,10 @@
 /* tablet */
 
 
-@media screen and (min-width: 1280px){   
+@media screen and (min-width: 1280px){  
+    .headSlider > li figure{
+        overflow-x: hidden;
+    } 
     .Main section.slideArea{
         margin-top:30px;
     }     
