@@ -5,43 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>guerlain</title>
-
-    <!-- ✅ 최신 jQuery 3.7.x 버전 CDN 사용 -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- 최신 버전 (3.7.x) -->
-
-    <!-- ✅ 나머지 스크립트는 jQuery 이후에 로드 -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <!-- <script src="js/jquery.fitvids.js"></script> -->
     <script src="js/guerlain.js"></script>
-
-    <!-- bxSlider 초기화 스크립트 -->
-    <script>
-        $(document).ready(function () {
-            console.log("Document is ready!");
-            console.log("jQuery version:", $.fn.jquery); // jQuery 버전 확인
-
-            if (typeof $.fn.bxSlider === "undefined") {
-                console.error("Error: bxSlider is not loaded!");
-                return;
-            }
-
-            $(".bxslider").bxSlider({
-                controls: true,
-                pagerType: "full",
-                auto: true,
-                autoControls: true,
-                autoControlsCombine: true,
-                touchEnabled: false,
-                autoDelay: 3000
-            });
-        });
-    </script>
-
     <link rel="stylesheet" href="css/import.css">
     <link rel="icon" href="images/favicon2.ico">
 </head>
-
-
 <body>
     <aside id="menuPanel">
         <input type="button" value="close" class="closeBtn">        
@@ -148,42 +118,6 @@
             <div>
                 <ul class="headSlider">
                     <li class="firstSlide">
-                        <div>
-                            <h3>
-                                <small>MON GUERLAIN</small><br>
-                                SPARKLING<br>
-                                BOUQUET<br>
-                                EAU DE PARFUM
-                            </h3>
-                            <p> A perfumed manifesto of today’s femininity</p>
-                            <a href="detail_wf_mon03.html">VIEW MORE</a>
-                        </div>
-                    </li>
-                    <li class="secondSlide">
-                        <div>
-                            <h3>
-                                <small>Les Colognes</small><br>
-                                A wonderful <br>
-                                perfuming<br>
-                                base                                       
-                            </h3>
-                            <p> it blends perfectly with your usual fragrance </p>
-                            <a href="detail_mf_lesco03.html">VIEW MORE</a>
-                        </div>
-                    </li>
-                    <li class="thirdSlide">
-                        <div>
-                            <h3>
-                                <small>L'Art  &amp;  La Matière</small><br>
-                                Crafting<br>
-                                raw materials<br>
-                                into art
-                            </h3>
-                            <p> crafted by the hands of Guerlain Perfumers </p>
-                            <a href="detail_mf_lartla10.html">VIEW MORE</a>
-                        </div>
-                    </li>
-                    <!-- <li class="firstSlide">
                         <figure>
                             <img src="images/main_slidebg_1.webp" alt="MON GUERLAIN">
                             <figcaption>
@@ -239,10 +173,8 @@
                                 <a href="detail_mf_lartla10.html">VIEW MORE</a>
                             </figcaption>
                         </figure>
-                    </li> -->
+                    </li>
                 </ul>
-                <!-- <div class="headCopyPager"></div> -->
-                <!-- <div class="headCopyAutoControl"></div> -->
             </div>
         </section>
         <!--  Main slide Fin -->

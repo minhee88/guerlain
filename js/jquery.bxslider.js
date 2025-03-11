@@ -1682,3 +1682,4 @@ $(document).ready(function() {
       autoDelay: 3000  // 3초 후 자동 슬라이드 시작
   });
 });
+

@@ -1,75 +1,7 @@
-@media screen and (max-width: 767px){
-    .slideArea > ul li{
-        position: relative;
-        text-align: center;
-    }
-    .slideArea ul.headSlider li{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 25vw 0; 
-        text-align: center;
-    }
-    .slideArea ul.headSlider li.firstSlide{
-        background-image: url("../images/main_slidebg_m1.png");
-    }
-    .slideArea ul.headSlider li.secondSlide{
-        background-image: url("../images/main_slidebg_m2.png");
-    }
-    .slideArea ul.headSlider li.thirdSlide{
-        background-image: url("../images/main_slidebg_m3.png");
-    }
-    .slideArea > ul li img{
-        width: 100%;
-        min-height: 800px;
-    }
-    .slideArea ul.headSlider li div{
-        position: absolute;
-        left: 58%;
-        top: 19%;
-        /* transform: translate(-50%, -50%); */
-        text-align: left;
-        width: 50%;
-        max-width: 450px;
-        color: #333;
-    }
-    .slideArea ul.headSlider li div h3{
-        font-size: 48px; 
-        line-height: 65px; 
-        font-weight: 700;
-        text-transform: uppercase; 
-    }
-    .slideArea ul.headSlider li div h3 small{
-        font-size: 20px; 
-        line-height: 30px; 
-        font-weight: 500; 
-        text-transform: uppercase; 
-        margin-bottom: 10px;        
-    }
-    .slideArea ul.headSlider li div p{
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 60px;
-        text-transform: lowercase; 
-    }
-    .slideArea ul.headSlider li div a{
-        font-size: 14px; 
-        line-height: 60px; 
-        font-weight: 700;
-        padding:20px 40px; 
-        border: 1px solid #333;
-    }
-    .slideArea .bx-wrapper .bx-controls-direction a{
-        font-size: 20px;
-        color: #333;
-    }
-    .slideArea div.headCopyPager, 
-    .slideArea div.headCopyAutoControl{
-        position: absolute;
-    }
-    /* headCopy slider */  
 
-    /* .Main section.slideArea{
+
+@media screen and (max-width: 767px){
+    .Main section.slideArea{
         margin-top: 50px;
     }
     .Main section div ul li{
@@ -110,7 +42,7 @@
         line-height: 300%;
         padding:4% 6%;
         border: 1px solid #333;
-    } */
+    }
     /*  Main slide Fin */
   
    
@@ -2972,76 +2904,7 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    .slideArea > ul li{
-        position: relative;
-        text-align: center;
-    }
-    .slideArea ul.headSlider li{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 25vw 0; 
-        text-align: center;
-    }
-    .slideArea ul.headSlider li.firstSlide{
-        background-image: url("../images/main_slidebg_1.webp");
-    }
-    .slideArea ul.headSlider li.secondSlide{
-        background-image: url("../images/main_slidebg_2.webp");
-    }
-    .slideArea ul.headSlider li.thirdSlide{
-        background-image: url("../images/main_slidebg_3.webp");
-    }
-    .slideArea > ul li img{
-        width: 100%;
-    }
-    .slideArea ul.headSlider li div{
-        position: absolute;
-        left: 58%;
-        top: 22%;
-        /* transform: translate(-50%, -50%); */
-        text-align: left;
-        width: 50%;
-        max-width: 450px;
-        color: #333;
-    }
-    .slideArea ul.headSlider li div h3{
-        font-size: 48px; 
-        line-height: 65px; 
-        font-weight: 700;
-        text-transform: uppercase; 
-    }
-    .slideArea ul.headSlider li div h3 small{
-        font-size: 20px; 
-        line-height: 30px; 
-        font-weight: 500; 
-        text-transform: uppercase; 
-        margin-bottom: 10px;        
-    }
-    .slideArea ul.headSlider li div p{
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 60px;
-        text-transform: lowercase; 
-    }
-    .slideArea ul.headSlider li div a{
-        font-size: 14px; 
-        line-height: 60px; 
-        font-weight: 700;
-        padding:20px 40px; 
-        border: 1px solid #333;
-    }
-    .slideArea .bx-wrapper .bx-controls-direction a{
-        font-size: 20px;
-        color: #333;
-    }
-    .slideArea div.headCopyPager, 
-    .slideArea div.headCopyAutoControl{
-        position: absolute;
-    }
-    /* headCopy slider */  
-
-    /* .Main section.slideArea{
+    .Main section.slideArea{
         margin-top:70px;
     }
     .Main section div ul li{
@@ -3085,7 +2948,7 @@
         line-height: 300%;
         padding:4% 6%;
         border: 1px solid #333;
-    } */
+    }
     /*  Main slide Fin */
   
    
@@ -5981,84 +5844,13 @@
 /* tablet */
 
 
-@media screen and (min-width: 1280px){ 
-    .slideArea > ul li{
-        position: relative;
-        text-align: center;
-    }
-    .slideArea ul.headSlider li{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding: 25vw 0; 
-        text-align: center;
-    }
-    .slideArea ul.headSlider li.firstSlide{
-        background-image: url("../images/main_slidebg_1.webp");
-    }
-    .slideArea ul.headSlider li.secondSlide{
-        background-image: url("../images/main_slidebg_2.webp");
-    }
-    .slideArea ul.headSlider li.thirdSlide{
-        background-image: url("../images/main_slidebg_3.webp");
-    }
-    .slideArea > ul li img{
-        width: 100%;
-    }
-    .slideArea ul.headSlider li div{
-        position: absolute;
-        left: 58%;
-        top: 22%;
-        /* transform: translate(-50%, -50%); */
-        text-align: left;
-        width: 50%;
-        max-width: 450px;
-        color: #333;
-    }
-    .slideArea ul.headSlider li div h3{
-        font-size: 48px; 
-        line-height: 65px; 
-        font-weight: 700;
-        text-transform: uppercase; 
-    }
-    .slideArea ul.headSlider li div h3 small{
-        font-size: 20px; 
-        line-height: 30px; 
-        font-weight: 500; 
-        text-transform: uppercase; 
-        margin-bottom: 10px;        
-    }
-    .slideArea ul.headSlider li div p{
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 60px;
-        text-transform: lowercase; 
-    }
-    .slideArea ul.headSlider li div a{
-        font-size: 14px; 
-        line-height: 60px; 
-        font-weight: 700;
-        padding:20px 40px; 
-        border: 1px solid #333;
-    }
-    .slideArea .bx-wrapper .bx-controls-direction a{
-        font-size: 20px;
-        color: #333;
-    }
-    .slideArea div.headCopyPager, 
-    .slideArea div.headCopyAutoControl{
-        position: absolute;
-    }
-    /* headCopy slider */  
-
-
-    /* .Main section.slideArea{
+@media screen and (min-width: 1280px){   
+    .Main section.slideArea{
         margin-top:30px;
     }     
     .Main section div ul li{
         display: block;
     }
-    
     .Main section div ul li figure{
         position: relative;
     }
@@ -6109,7 +5901,7 @@
         font-weight: 700;
         padding:20px 40px; 
         background-color: rgb(255, 255, 255, 0.2);
-    } */
+    }
     /*  Main slide Fin */
   
    

@@ -23,9 +23,6 @@
 ul.bxslider {
   list-style: none;
 }
-.slideArea .bx-wrapper li{
-  height: 100%;
-}
 .bx-viewport {
   /* fix other elements on the page moving (in Chrome) */
   -webkit-transform: translateZ(0);
@@ -42,8 +39,8 @@ ul.bxslider {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: 45px;
-  width: 100%;
+  /* bottom: -30px; */
+  /* width: 100%; */
 }
 /* LOADER */
 .bx-wrapper .bx-loading {
@@ -69,15 +66,10 @@ ul.bxslider {
   background: #666;
   text-indent: -9999px;
   display: block;
-  width: 60px;
-  height: 3px;
+  width: 10px;
+  height: 10px;
   margin: 0 5px;
   outline: 0;
-  /* background: rgb(0, 0, 0, 0.2);
-      text-indent: -9999px;
-      display: block;
-      width: 60px;
-      height: 3px; */
   /* -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px; */
