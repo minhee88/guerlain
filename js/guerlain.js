@@ -1,7 +1,7 @@
 $(document).ready(function(){    
     // sliderFunc(".headSlider", false, false, false, 0, 450, true, true, 'horizontal');
     sliderFunc(".headSlider", false, false, true, 4000, 450, true, true, 'horizontal'); // 자동 재생 활성화 (auto: true, delay: 4000)
-    sliderFunc(".aboutsinSlider",true,"full",true,true,true,0);
+    sliderFunc2(".aboutsinSlider",true,"full",true,true,true,0);
     openCloseControl("header div > div input[type='button']");
     toggleUI("#menuPanel nav div");
     searchPanel("header > div:first-of-type ul li input[value='search']");
@@ -57,17 +57,17 @@ function sliderFunc(target, conVal, pagVal, autoVal, delayVal, speedVal, dotNav,
 //         mode: 'horizontal'        // 슬라이드 방식 ('horizontal'로 변경)
 //     });
 // }
-// function sliderFunc(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delayVal){
-//     $(target).bxSlider({
-//         controls: conVal,
-//         pagerType: pagVal,
-//         auto: autoVal,
-//         autoControls: autoConVal, 
-//         autoControlsCombine: autoCombineVal,
-//         touchEnabled: false,
-//         autoDelay: delayVal
-//     });
-// }
+function sliderFunc2(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delayVal){
+    $(target).bxSlider({
+        controls: conVal,
+        pagerType: pagVal,
+        auto: autoVal,
+        autoControls: autoConVal, 
+        autoControlsCombine: autoCombineVal,
+        touchEnabled: false,
+        autoDelay: delayVal
+    });
+}
 function accControl(target){
     $(target).click(function(){
         $(this).toggleClass("active");
