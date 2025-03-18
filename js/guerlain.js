@@ -65,7 +65,8 @@ function sliderFunc2(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,dela
         autoControls: autoConVal, 
         autoControlsCombine: autoCombineVal,
         touchEnabled: false,
-        autoDelay: delayVal
+        autoDelay: delayVal,
+        speed: 4000  // 슬라이드 전환 속도를 4000ms (4초)로 설정
     });
 }
 function accControl(target){
