@@ -1,5 +1,6 @@
 $(document).ready(function(){    
-    sliderFunc(".headSlider",true,"full",true,true,true,0);
+    // sliderFunc(".headSlider", false, false, false, 0, 450, true, true, 'horizontal');
+    sliderFunc(".headSlider", false, false, true, 4000, 450, true, true, 'horizontal'); // 자동 재생 활성화 (auto: true, delay: 4000)
     sliderFunc(".aboutsinSlider",true,"full",true,true,true,0);
     openCloseControl("header div > div input[type='button']");
     toggleUI("#menuPanel nav div");
@@ -27,18 +28,46 @@ function mainPopup(){
         $(".mainPopupContent").fadeOut();
     });
 }
-function sliderFunc(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delayVal){
+function sliderFunc(target, conVal, pagVal, autoVal, delayVal, speedVal, dotNav, infiniteLoop, mode){
     $(target).bxSlider({
-        controls: conVal,
-        pagerType: pagVal,
-        // auto: false,
-        auto: autoVal,
-        autoControls: autoConVal, 
-        autoControlsCombine: autoCombineVal,
-        touchEnabled: false,
-        autoDelay: delayVal
+        controls: conVal,         // 이전/다음 버튼 여부
+        pager: dotNav,            // 점 네비게이션 여부
+        auto: autoVal,            // 자동재생 여부 (이제 true로 설정 가능)
+        pause: delayVal,          // 자동재생 간격 (ms 단위, 기본 4000ms = 4초)
+        autoControls: false,      // 자동재생 컨트롤 버튼 표시 여부
+        autoControlsCombine: false,
+        touchEnabled: true,       // 터치 스와이프 활성화
+        autoDelay: 0,             // 자동재생 시작 지연 시간 (바로 시작)
+        speed: speedVal,          // 슬라이드 전환 속도
+        infiniteLoop: infiniteLoop, // 무한 반복 여부
+        mode: mode                // 슬라이드 방식 ('horizontal'로 설정)
     });
 }
+// function sliderFunc(target, conVal, pagVal, autoVal, delayVal, speedVal, dotNav, infiniteLoop, mode){
+//     $(target).bxSlider({
+//         controls: conVal,         // 이전/다음 버튼 여부
+//         pager: dotNav,            // 점 네비게이션 여부
+//         auto: autoVal,            // 자동재생 여부
+//         autoControls: false,      // 자동재생 컨트롤 버튼 표시 여부
+//         autoControlsCombine: false,
+//         touchEnabled: true,       // 터치 스와이프 활성화
+//         autoDelay: delayVal,      // 자동재생 지연 시간
+//         speed: speedVal,          // 슬라이드 전환 속도
+//         infiniteLoop: infiniteLoop, // 무한 반복 여부
+//         mode: 'horizontal'        // 슬라이드 방식 ('horizontal'로 변경)
+//     });
+// }
+// function sliderFunc(target,conVal,pagVal,autoVal,autoConVal,autoCombineVal,delayVal){
+//     $(target).bxSlider({
+//         controls: conVal,
+//         pagerType: pagVal,
+//         auto: autoVal,
+//         autoControls: autoConVal, 
+//         autoControlsCombine: autoCombineVal,
+//         touchEnabled: false,
+//         autoDelay: delayVal
+//     });
+// }
 function accControl(target){
     $(target).click(function(){
         $(this).toggleClass("active");
