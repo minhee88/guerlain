@@ -203,7 +203,7 @@ ul.bxslider {
   .bx-wrapper .bx-pager,
   .bx-wrapper .bx-controls-auto {
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     width: 100%;
   }
 }
